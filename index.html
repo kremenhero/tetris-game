@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Tetris</title>
+
+    <link rel="stylesheet" type="text/css" media="screen" href="styles/game.css" />
+
+    <link rel="stylesheet" type="text/css" media="screen" href="game/game.css" />
+    <script src="game/game.js"></script>
+</head>
+<body>
+<div class = "game">
+    <div class = "game--menu">
+        <div class = "game--menu--title">Tetris.</div>
+        <div class = "game--menu--status" id = "game-status">Press Space to Play.</div>
+        <div class = "game--menu--upcoming-board">
+            <div class = "game--menu--upcoming-board--title">Upcoming block:</div>
+            <canvas id = "game-upcoming-board"></canvas>
+        </div>
+        <div class = "game--menu--info">
+            <div class = "game--menu--info-item">
+                <div>Score:</div>
+                <div id = "game-earned-scores">00000</div>
+            </div>
+            <div class = "game--menu--info-item">
+                <div>Rows:</div>
+                <div id = "game-built-rows">0</div>
+            </div>
+        </div>
+        <div class = 'game--menu--source-code'>
+            <div>Source code:</div>
+            <a href = "https://github.com/kremenhero/tetris-game" target = "_blank"></a>
+        </div>
+        <div class = 'game--menu--author'>
+            <div>Made by:</div>
+            <a href = "https://github.com/kremenhero" target = "_blank">@kremenhero</a>
+        </div>
+    </div>
+    <div class = "game--board">
+        <canvas id = "game-board"></canvas>
+    </div>
+</div>
+</body>
+</html>

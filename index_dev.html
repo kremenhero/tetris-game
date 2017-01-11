@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Tetris</title>
+
+    <link rel="stylesheet" type="text/css" media="screen" href="styles/game.css" />
+
+    <script src="src/polyfills/polyfill-request-animation-frame.js"></script>
+    <script src="src/polyfills/polyfill-object-assign.js"></script>
+    <script src="src/polyfills/polyfill-object-keys.js"></script>
+
+    <script src="src/base/base-global-init.js"></script>
+    <script src="src/settings/settings-game-constants.js"></script>
+
+    <script src="src/utils/utils-converter.js"></script>
+    <script src="src/utils/utils-oop.js"></script>
+    <script src="src/utils/utils-html.js"></script>
+    <script src="src/utils/utils-number.js"></script>
+    <script src="src/utils/utils-object.js"></script>
+
+    <script src="src/core/core-class.js"></script>
+
+    <script src="src/core/graphical-engine/graphical-engine-canvas-manager.js"></script>
+
+    <script src="src/core/models/model.js"></script>
+    <script src="src/core/models/model-block.js"></script>
+    <script src="src/core/models/model-block-tile.js"></script>
+
+    <script src="src/core/collections/collection.js"></script>
+    <script src="src/core/collections/collection-blocks.js"></script>
+    <script src="src/core/collections/collection-blocks-tiles.js"></script>
+
+    <script src="src/core/services-classes/service-class-event-manager.js"></script>
+    <script src="src/core/services-classes/service-class-assets-loader.js"></script>
+    <script src="src/core/services-classes/service-class-game-data-manager.js"></script>
+
+    <script src="src/game/game-tetris.js"></script>
+
+    <script src="src/main.js"></script>
+</head>
+<body>
+<div class = "game">
+    <div class = "game--menu">
+        <div class = "game--menu--title">Tetris.</div>
+        <div class = "game--menu--status" id = "game-status">Press Space to Play.</div>
+        <div class = "game--menu--upcoming-board">
+            <div class = "game--menu--upcoming-board--title">Upcoming block:</div>
+            <canvas id = "game-upcoming-board"></canvas>
+        </div>
+        <div class = "game--menu--info">
+            <div class = "game--menu--info-item">
+                <div>Score:</div>
+                <div id = "game-earned-scores">00000</div>
+            </div>
+            <div class = "game--menu--info-item">
+                <div>Rows:</div>
+                <div id = "game-built-rows">0</div>
+            </div>
+        </div>
+        <div class = 'game--menu--source-code'>
+            <div>Source code:</div>
+            <a href = "https://github.com/kremenhero/tetris-game" target = "_blank"></a>
+        </div>
+        <div class = 'game--menu--author'>
+            <div>Made by:</div>
+            <a href = "https://github.com/kremenhero" target = "_blank">@kremenhero</a>
+        </div>
+    </div>
+    <div class = "game--board">
+        <canvas id = "game-board"></canvas>
+    </div>
+</div>
+</body>
+</html>

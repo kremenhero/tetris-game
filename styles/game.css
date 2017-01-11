@@ -1,0 +1,269 @@
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+ins {
+  text-decoration: none;
+}
+del {
+  text-decoration: line-through;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+@font-face {
+  font-family: 'DigitalFont';
+  src: url('../res/fonts/digital-7.ttf');
+  font-weight: normal;
+}
+.flex-centering {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: justify;
+      justify-content: space-between;
+  -ms-flex-align: center;
+      align-items: center;
+}
+.flex-column {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+      flex-direction: column;
+}
+.game {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  display: -ms-flexbox;
+  display: flex;
+  min-height: 670px;
+  min-width: 980px;
+  font-family: 'DigitalFont', sans-serif;
+}
+.game--menu {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+      flex-direction: column;
+  -ms-flex-pack: justify;
+      justify-content: space-between;
+  position: relative;
+  width: 400px;
+  padding: 32px 16px;
+  box-sizing: border-box;
+  background: #2d2d2d;
+  color: #c8be00;
+  font-size: 20px;
+}
+.game--menu--title {
+  margin-bottom: 32px;
+  font-size: 42px;
+  font-weight: 700;
+}
+.game--menu--status {
+  font-size: 24px;
+}
+.game--menu--upcoming-board--title {
+  margin-bottom: 8px;
+  font-size: 20px;
+}
+.game--menu--upcoming-board #game-upcoming-board {
+  width: 267px;
+  height: 267px;
+}
+.game--menu--info {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+      flex-direction: column;
+}
+.game--menu--info-item {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: justify;
+      justify-content: space-between;
+  -ms-flex-align: center;
+      align-items: center;
+  height: 50px;
+}
+.game--menu--info-item div {
+  width: 75px;
+}
+.game--menu--info-item #game-built-rows,
+.game--menu--info-item #game-earned-scores {
+  width: auto;
+  font-size: 42px;
+  font-weight: 700;
+}
+.game--menu--source-code {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: justify;
+      justify-content: space-between;
+  -ms-flex-align: center;
+      align-items: center;
+  height: 50px;
+  margin: 32px 0 16px;
+}
+.game--menu--source-code a {
+  display: block;
+  background: url('../res/graphics/github.png');
+  width: 32px;
+  height: 32px;
+}
+.game--menu--author {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: justify;
+      justify-content: space-between;
+  -ms-flex-align: center;
+      align-items: center;
+  height: 50px;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  padding: 0 16px;
+  width: 100%;
+  box-sizing: border-box;
+}
+.game--menu--author a {
+  text-decoration: none;
+  color: #c8be00;
+}
+.game--menu--author a:hover {
+  color: #7c7500;
+}
+.game--board {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: center;
+      justify-content: center;
+  -ms-flex-align: center;
+      align-items: center;
+  width: 100%;
+  padding: 0 16px;
+  box-sizing: border-box;
+  background: #232323;
+}
+.game--board #game-board {
+  width: 640px;
+  height: 640px;
+  background: url('../res/graphics/background.png');
+  border: solid 3px #c8be00;
+}

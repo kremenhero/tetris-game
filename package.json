@@ -1,0 +1,27 @@
+{
+  "name": "tetris",
+  "version": "1.0.0",
+  "description": "Classic tetris game",
+  "main": "gulpfile.js",
+  "dependencies": {
+    "autoprefixer-core": "^5.1.11",
+    "gulp": "^3.6.2",
+    "gulp-concat": "^2.2.0",
+    "gulp-less": "^3.0.2",
+    "gulp-postcss": "^5.1.3",
+    "gulp-replace": "^0.5.4",
+    "gulp-trailing-comma": "0.0.2",
+    "gulp-uglify": "^0.3.1",
+    "gulp-uglifyjs": "^0.4.2",
+    "uglifyjs": "^2.3.6"
+  },
+  "devDependencies": {
+    "istanbul": "~0.3.0",
+    "jsdoc": "3.3.0-alpha5"
+  },
+  "scripts": {
+    "test": "gulp"
+  },
+  "author": "Denis Karmazin",
+  "license": "ISC"
+}
